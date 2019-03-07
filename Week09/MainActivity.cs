@@ -17,12 +17,11 @@ namespace Week09
         {
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.activity_main);
-
-            Android.Support.V7.Widget.Toolbar toolbar = FindViewById<Android.Support.V7.Widget.Toolbar>(Resource.Id.toolbar);
-            SetSupportActionBar(toolbar);
-
-            FloatingActionButton fab = FindViewById<FloatingActionButton>(Resource.Id.fab);
-            fab.Click += FabOnClick;
+            EditText etTotalcash, etnight;
+            RadioButton rdbsui, rdbdou, rdbsin;
+            CheckBox cbtran, cbsp, cbtg;
+            Button btOkay;
+            double total = 0, nig;
         }
 
         public override bool OnCreateOptionsMenu(IMenu menu)

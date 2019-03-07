@@ -4,29 +4,120 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+	<LinearLayout
+		android:orientation="horizontal"
+		android:minWidth="25px"
+		android:minHeight="100px"
+		android:layout_width="match_parent"
+		android:layout_height="100px"
+		android:id="@+id/linearLayout1" >
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/AppTheme.AppBarOverlay">
+		<TextView
+			android:text="Hotel"
+			android:textAppearance="?android:attr/textAppearanceLarge"
+			android:layout_width="wrap_content"
+			android:layout_height="match_parent"
+			android:id="@+id/textView1" />
 
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/AppTheme.PopupOverlay" />
+	</LinearLayout>
+	<GridLayout
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="130dp"
+		android:rowCount="3"
+		android:columnCount="2"
+		android:layout_marginTop="30dp"
+		android:id="@+id/gridLayout1" >
+		<TextView
+			android:text="Guest Name"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:id="@+id/textView2" />
+		<EditText
+			android:inputType="textPersonName"
+			android:id="@+id/editText1" />
+		<TextView
+			android:text="Nights"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:id="@+id/textView3" />
+		<EditText
+			android:inputType="numberDecimal"
+			android:id="@+id/editText2" />
+		<TextView
+			android:text="Category"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:id="@+id/textView4" />
+		<RadioGroup
+			android:minWidth="25px"
+			android:minHeight="25px"
+			android:orientation="horizontal"
+			android:id="@+id/radioGroup1">
+			<RadioButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:checked="true"
+				android:text="Single"
+				android:id="@+id/radioButton1" />
+			<RadioButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Double"
+				android:id="@+id/radioButton2" />
+			<RadioButton
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Deluxe"
+				android:id="@+id/radioButton3" />
+		</RadioGroup>
+		</GridLayout>
+	<GridLayout
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="30dp"
+		android:id="@+id/gridLayout2"
+		android:layout_marginTop="160dp" >
+		<TextView
+			android:text="Facilities"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:id="@+id/textView5" />
+		<CheckBox
+			android:text="Transportation"
+			android:id="@+id/checkBox1" />
+		<CheckBox
+			android:text="Spa"
+			android:id="@+id/checkBox2" />
+		<CheckBox
+			android:text="Tourist Guide"
+			android:id="@+id/checkBox3" />
+	</GridLayout>
+	<GridLayout
+		android:minWidth="25px"
+		android:minHeight="25px"
+		android:layout_width="match_parent"
+		android:layout_height="30dp"
+		android:id="@+id/gridLayout3"
+		android:layout_marginTop="190dp" >
+		<TextView
+			android:text="Total"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:id="@+id/textView6" />
+		<EditText
+			android:inputType="numberDecimal"
+			android:id="@+id/editText3" />
+	</GridLayout>
+	
+		
+	</GridLayout>
+	
 
-    </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_main" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+
+	
+
+
+
+
 
 </android.support.design.widget.CoordinatorLayout>
